@@ -3,6 +3,10 @@ import Botao from '../button';
 import Style  from './style.module.scss'
 
 class Formulario extends React.Component{
+  state = {
+    tarefa : "",
+    tempo : "00:00:00"
+  }
   render() {
     return(
         <form className={Style.novaTarefa}>
