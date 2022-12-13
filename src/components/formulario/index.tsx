@@ -1,11 +1,12 @@
 import React from 'react';
 import Botao from '../button';
+import Style  from './style.module.scss'
 
 class Formulario extends React.Component{
   render() {
     return(
-        <form>
-            <div>
+        <form className={Style.novaTarefa}>
+            <div className={Style.inputContainer}>
                 <label htmlFor="tarefa">
                   Adicione um novo estudo 
                 </label>
@@ -17,7 +18,7 @@ class Formulario extends React.Component{
                   required
                   />
                 </div>
-            <div>
+            <div className={Style.inputContainer}>
             <label>
               tempo 
             </label>
@@ -30,7 +31,7 @@ class Formulario extends React.Component{
                   max = "01:30:00"
                   />
             </div>
-            <Botao />
+            <Botao texto='Adcionar' />
         </form>
     )
   }   
